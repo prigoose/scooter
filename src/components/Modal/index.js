@@ -1,12 +1,11 @@
 import _ from 'lodash'
 import React from 'react'
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
-import Card from '../Card'
+import { Header, Icon, Image, Modal } from 'semantic-ui-react'
 import glionDolly from '../../data/images/glion-dolly.jpg'
 
-const ModalExampleScrollingContent = () => (
-  <Modal trigger={<Card/>}>
-    <Modal.Header style={{textAlign: 'center', backgroundColor: '#00007D', color: 'white'}}>Glion Dolly</Modal.Header>
+const ScooterModal = ({open, handleModal}) => (
+  <Modal open={open} closeIcon onClose={handleModal}>
+    <Modal.Header style={{textAlign: 'center', backgroundColor: 'maroon', color: 'white'}}>Glion Dolly</Modal.Header>
     <Modal.Content image scrolling>
       <Image size='medium' src={glionDolly} wrapped />
       <Modal.Description>
@@ -25,4 +24,4 @@ const ModalExampleScrollingContent = () => (
   </Modal>
 )
 
-export default ModalExampleScrollingContent
+export default ScooterModal
