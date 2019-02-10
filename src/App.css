@@ -1,21 +1,30 @@
 .App {
-  text-align: center;
+  font-family: Roboto, regular;
+  margin-top: 10px;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.scooter {
+  height: 50px; 
+}
+
+.title {
+  color: maroon;
+  font-weight: bold;
+  text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  font-size: calc(9px + 2vmin);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
 .App-link {
@@ -28,5 +37,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .center-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .center-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
