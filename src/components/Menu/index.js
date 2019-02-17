@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Input, Menu, Segment, Icon } from 'semantic-ui-react'
+import { RangeSlider } from '@appbaseio/reactivesearch';
 import Card from '../Card'
 import Cards from '../Cards'
 import Grid from '../Grid'
@@ -28,6 +29,15 @@ export default class MenuExampleTabularOnTop extends Component {
         </Menu>
 
         <Segment attached='bottom'>
+          {/* <RangeSlider
+          componentId="RangeSliderSensor"
+          dataField="guests"
+          title="Guests"
+          range={{
+            "start": 0,
+            "end": 10
+          }}
+          /> */}
           {this.state.activeItem === 'Browse All' ? <Cards/> : 'Need to build out favorites'}
         </Segment>
       </div>
