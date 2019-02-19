@@ -9,6 +9,7 @@ const CheckboxGroup = ({title, options, handleFilter}) => {
             style={{marginRight: 5}}
             label={option}
             onChange={() => handleFilter(option)}
+            defaultChecked
             />
         </div>
     ));

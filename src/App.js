@@ -40,7 +40,8 @@ class App extends Component {
     scooter.speed > minSpeed && scooter.speed < maxSpeed &&
     scooter.range > minRange && scooter.range < maxRange &&
     scooter.weight > minWeight && scooter.weight < maxWeight &&
-    scooter.power > minPower && scooter.power < maxPower
+    scooter.power > minPower && scooter.power < maxPower &&
+    this.state[scooter.type]
     ))
     this.setState({filteredScooters})
   }
@@ -66,9 +67,10 @@ class App extends Component {
   }
   async handleTypeFilter(option) {
     await this.setState({[option]: !this.state[option]})
+    this.handleFilter()
   }
   render() {
-    const { displayFilters, filteredScooters } = this.state;
+    const { displayFilters, filteredScooters, Scooter, Skateboard, Alternative } = this.state;
     return (
       <AppWrapper>
         <Header/>

@@ -3,7 +3,7 @@ import glionDollyImg from './images/GlionDolly/main.jpg'
 export const scooters = [
     {
         name: 'Glion Dolly',
-        type: 'scooter',
+        type: 'Scooter',
         price: 499,
         weight: 28,
         speed: 16,
