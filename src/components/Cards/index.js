@@ -1,23 +1,22 @@
 import React from 'react'
 import ScooterCard from '../Card'
 import { Grid } from 'semantic-ui-react'
+import { CardsContainer } from './styledComponents'
 
-import '../../App.css';
-
-let scooters = [1, 2, 3, 4, 5, 6, 7, 8]
-
-const Cards = () => {
-    const cards = scooters.map((scooter) =>
-    <div>
+const Cards = ({ scooters }) => {
+    const cards = scooters.map((scooter, index) =>
+    <div key={index}>
     <Grid.Column>
-    <ScooterCard index={scooter} style={{marginTop: 10, marginBottom: 10}}/>
+    <ScooterCard  style={{marginTop: 10, marginBottom: 10}}/>
     </Grid.Column>
     </div>
     );
     return (
-        <Grid stackable columns={4} style={{display: 'flex', justifyContent: 'center'}}>
+        <CardsContainer>
+        <Grid stackable columns={4} style={{display: 'flex', justifyContent: 'space-between'}}>
         {cards}
         </Grid>
+        </CardsContainer>
     )
 }
 

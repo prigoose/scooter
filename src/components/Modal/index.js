@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import React from 'react'
 import { Header, Icon, Image, Modal } from 'semantic-ui-react'
-import glionDolly from '../../data/images/glion-dolly.jpg'
+import glionDolly from '../../data/images/GlionDolly/main.jpg'
 
 const ScooterModal = ({open, handleModal}) => (
   <Modal open={open} closeIcon onClose={handleModal}>
