@@ -9,7 +9,7 @@ class Filters extends Component {
       const { handleWeightFilter, handlePriceFilter, handleRangeFilter, handlePowerFilter, handleSpeedFilter, handleTypeFilter } = this.props;
     return (
     <FilterContainer>
-    <Grid columns={2} celled>
+    <Grid stackable columns={2} celled>
     <Grid.Row>
         <Grid.Column>
             <CheckboxGroup

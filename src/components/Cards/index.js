@@ -7,7 +7,10 @@ const Cards = ({ scooters }) => {
     const cards = scooters.map((scooter, index) =>
     <div key={index}>
     <Grid.Column>
-    <ScooterCard  style={{marginTop: 10, marginBottom: 10}}/>
+    <ScooterCard
+    data={scooter}
+    style={{marginTop: 10, marginBottom: 10}}
+    />
     </Grid.Column>
     </div>
     );

@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
-import glionDolly from '../../data/images/GlionDolly/main.jpg'
+import { Card, Image } from 'semantic-ui-react'
 import ScooterModal from '../Modal'
 
 class ScooterCard extends Component {
   constructor() {
     super();
     this.state = {
-      heart: false,
-      modal: false,
+      modal: true,
     }
     this.handleModal=this.handleModal.bind(this);
   }
@@ -16,24 +14,29 @@ class ScooterCard extends Component {
     this.setState({modal: !this.state.modal})
   }
   render() {
-    const {...modalTriggerProps} = this.props;
+    const {data, ...modalTriggerProps} = this.props;
+    const { image, make, model, price, description} = data;
     return(
       <div>
   <Card {...modalTriggerProps} link >
     <Card.Content onClick={this.handleModal}>
-    <Image src={glionDolly} style={{marginBottom: 15}}/>
+    <Image src={image} style={{marginBottom: 15}}/>
     <Card.Header>
-    Glion Dolly
+    {make}{' '}{model}
     </Card.Header>
       <Card.Meta>
-        <span>$499</span>
+        <span>${price}</span>
       </Card.Meta>
       <Card.Description>
-      The Glion Dolly stands out for its portability. It folds up and then can be rolled like a suitcase (or dolly, hence the name), making it perfect for multi-modal scooter commuters to take on a bus or a train.
+      {description}
       </Card.Description>
     </Card.Content>
   </Card>
-    <ScooterModal open={this.state.modal} handleModal={this.handleModal}/> 
+    <ScooterModal 
+    open={this.state.modal} 
+    handleModal={this.handleModal}
+    data={data}
+    /> 
     </div>
 )
     }
