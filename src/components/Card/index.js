@@ -6,7 +6,7 @@ class ScooterCard extends Component {
   constructor() {
     super();
     this.state = {
-      modal: true,
+      modal: false,
     }
     this.handleModal=this.handleModal.bind(this);
   }

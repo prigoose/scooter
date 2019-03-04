@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     font-size: calc(9px + 2vmin);
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    background-color: navy;
     margin-bottom: 5px;
 `
 export const Logo = styled.img`

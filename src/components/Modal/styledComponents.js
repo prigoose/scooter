@@ -18,25 +18,25 @@ const SpeechBubble = styled.div`
         margin-top: -10px;
     }
 `
-export const PositiveSpeechBubble = styled(SpeechBubble)`
+export const GreenSpeechBubble = styled(SpeechBubble)`
 	& {
-	background: lightgreen;
+	background: #b2ffd2;
     }
     &:after {
         left: 0;
-        border-right-color: lightgreen;
+        border-right-color: #b2ffd2;
         border-left: 0;
         margin-left: -20px;
     }
 `
 
-export const NegativeSpeechBubble = styled(SpeechBubble)`
+export const RedSpeechBubble = styled(SpeechBubble)`
 	& {
-	background: red;
+	background: #ffb2b2;
     }
     &:after {
         right: 0;
-        border-left-color: red;
+        border-left-color: #ffb2b2;
         border-right: 0;
         margin-right: -20px;
     }
