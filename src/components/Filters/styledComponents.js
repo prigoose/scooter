@@ -6,4 +6,5 @@ export const FilterContainer = styled.div`
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 20px;
 `

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Icon } from 'semantic-ui-react'
 
-import scooter from '../icons/scooter.svg';
+import scooter from '../base-ui/icons/scooter.svg';
 import { HeaderContainer, Logo } from './styledComponents'
-
 
 class Header extends Component {
   render() {
@@ -14,7 +13,7 @@ class Header extends Component {
                 src={scooter}
                 alt="logo"
             />
-          <p className="title" style={{color: 'white', fontFamily: 'Fredoka One'}}>Scooter Scout</p>
+          <p className="title" style={{fontFamily: 'Rubik Mono One'}}>Scooter Scout</p>
         </HeaderContainer>
         </div>
     );

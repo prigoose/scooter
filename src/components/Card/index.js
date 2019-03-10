@@ -20,7 +20,9 @@ class ScooterCard extends Component {
       <div>
   <Card {...modalTriggerProps} link >
     <Card.Content onClick={this.handleModal}>
-    <Image src={image} style={{marginBottom: 15}}/>
+    <div style={{width: 250, height: 300, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+    <Image src={image} style={{marginBottom: 15, width: 'auto', height: '100%'}}/>
+    </div>
     <Card.Header>
     {make}{' '}{model}
     </Card.Header>

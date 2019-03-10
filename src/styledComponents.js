@@ -13,7 +13,3 @@ export const FilterContainer = styled.div`
     padding-left: 0px;
     padding-right: 0px;
 `
-
-export const ButtonContainer = styled.div`
-    padding-bottom: 10px;
-`

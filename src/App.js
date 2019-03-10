@@ -3,14 +3,14 @@ import Cards from './components/Cards';
 import Header from './components/SiteHeader'
 import Filters from './components/Filters'
 import ConditionalRender from './components/base-ui/ConditionalRender'
-import { AppWrapper, FilterContainer, ButtonContainer, ContentWrapper } from './styledComponents'
+import { AppWrapper, FilterContainer, ContentWrapper } from './styledComponents'
 import { Button } from 'semantic-ui-react'
 import { scooters } from './data/scooters'
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      displayFilters: true,
+      displayFilters: false,
       filtersAdded: false,
       Scooter: true,
       Skateboard: true,
@@ -74,13 +74,13 @@ class App extends Component {
         <Header/>
         <ContentWrapper>
         <FilterContainer>
-          <ButtonContainer>
         <Button
-          content="Filters"
-          basic color='grey'
+          content="Add Filters"
+          basic={displayFilters} color='green'
           onClick={() => this.setState({displayFilters: !displayFilters})}
+          style={{marginTop: 20, color: 'black'}}
+          size='big'
         />
-        </ButtonContainer>
         <ConditionalRender 
           shouldRender={displayFilters}
           component={Filters}

@@ -11,7 +11,7 @@ const { amazonLink, otherBuyLink, name, price, weight, speed, range, image, make
 return (
 
   <Modal open={open} closeIcon onClose={handleModal}>
-    <Modal.Header style={{textAlign: 'center', backgroundColor: 'navy', color: 'white'}}>{make}{' '}{model}</Modal.Header>
+    <Modal.Header style={{textAlign: 'center', backgroundColor: '#fcd300'}}>{make}{' '}{model}</Modal.Header>
     <Modal.Content>
       <Modal.Description>
 <div style={{boxShadow:'0px 0px 0px 1px lightgrey inset'}}>
@@ -29,7 +29,7 @@ return (
     <p style={{fontSize: 20, marginTop: 15}}>{description}</p>
   </Grid.Column>
 </Grid>
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 30}}>
   <CommentsSection
     positive1={positive1}
     positive2={positive2}
@@ -40,7 +40,7 @@ return (
     negative3={negative3}
     negative4={negative4}
   />
-  <div style={{display: 'flex', justifyContent: 'center'}}>
+  <div style={{display: 'flex', justifyContent: 'center', marginTop: 10}}>
   <ConditionalRender 
     shouldRender={amazonLink}
     component={AmazonButton}
@@ -53,7 +53,7 @@ return (
     otherBuyLink={otherBuyLink}
   />
   </div>
-  <p style={{fontSize: 10, marginTop: 10, marginBottom: 10}}>Comments on this site are collected from around the internet, including Amazon, Reddit, and personal blogs.</p>
+  <p style={{fontSize: 10, marginTop: 20, marginBottom: 10}}>Comments on this site are collected from around the internet, including Amazon, Reddit, and personal blogs.</p>
   </div>
   </div>
       </Modal.Description>
