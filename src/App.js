@@ -75,8 +75,9 @@ class App extends Component {
         <ContentWrapper>
         <FilterContainer>
         <Button
-          content="Add Filters"
-          basic={displayFilters} color='green'
+          content='Add Filters'
+          toggle
+          active={displayFilters}
           onClick={() => this.setState({displayFilters: !displayFilters})}
           style={{marginTop: 20, color: 'black'}}
           size='big'
