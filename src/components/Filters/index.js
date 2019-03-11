@@ -13,7 +13,7 @@ class Filters extends Component {
         <Grid.Column>
         <Slider
             header={'Price'}
-            sliderMax={6500}
+            sliderMax={3800}
             prefix={'$'}
             handleFilter={handlePriceFilter}
             />
