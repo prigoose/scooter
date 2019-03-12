@@ -1,42 +1,44 @@
-import AirAluminum from './images/scooters/AirAluminum.png';
-import AirCarbon from './images/scooters/AirCarbon.jpg';
-import Dualtron3 from './images/scooters/Dualtron3.png';
-import DualtronSpider from './images/scooters/DualtronSpider.jpg';
-import DualtronThunder from './images/scooters/DualtronThunder.png';
-import EcoRecoL5 from './images/scooters/EcoRecoL5.png';
-import EcoRecoL5Plus from './images/scooters/EcoRecoL5Plus.png';
-import EcoRecoM5 from './images/scooters/EcoRecoM5.jpg';
-import EcoRecoS5 from './images/scooters/EcoRecoS5.jpg';
-import EmoveTouring from './images/scooters/EmoveTouring.jpg';
-import GlionDolly from './images/scooters/GlionDolly.jpg';
-import GoPedESR750 from './images/scooters/GoPedESR750.jpg';
-import GotraxG1GliderFolding from './images/scooters/GotraxG1GliderFolding.jpg';
-import GotraxG2ElectricKick from './images/scooters/GotraxG2ElectricKick.jpg';
-import GoTraxGXLCommuter from './images/scooters/GoTraxGXLCommuter.jpg';
-import GotraxGXLCommuterV2 from './images/scooters/GotraxGXLCommuterV2.jpg';
-import ImaxS1Plus from './images/scooters/GotraxGXLCommuterV2.jpg';
-import MegawheelsS1 from './images/scooters/MegawheelsS1.jpg';
-import NinebotES1 from './images/scooters/NinebotES1.jpg';
-import QiewaQ1Hummer from './images/scooters/QiewaQ1Hummer.jpg';
-import QiewaQMini from './images/scooters/QiewaQMini.jpg';
-import RazorE300 from './images/scooters/RazorE300.jpg';
-import RazorEcoSmartMetro from './images/scooters/RazorEcoSmartMetro.jpg';
-import RazorEPrime from './images/scooters/RazorEPrime.png';
-import SegwayNinebotES2 from './images/scooters/SegwayNinebotES2.jpg';
-import SegwayNinebotES4 from './images/scooters/SegwayNinebotES4.jpg';
-import SpeedwayMini4Pro from './images/scooters/SpeedwayMini4Pro.png';
-import SwagtronSwagger from './images/scooters/SwagtronSwagger.jpg';
-import SwagtronSwagger5CityCommuter from './images/scooters/SwagtronSwagger5CityCommuter.jpeg';
-import UberScoot300W from './images/scooters/UberScoot300W.jpg';
-import UberScoot1000W from './images/scooters/UberScoot1000W.jpg';
-import UberScoot1600W from './images/scooters/UberScoot1600W.jpg';
-import UscootersBoosterPlusS from './images/scooters/UscootersBoosterPlusS.jpg';
-import UscootersEco from './images/scooters/UscootersEco.jpg';
-import VoyagerIon from './images/scooters/VoyagerIon.jpg';
-import VoyagerProton from './images/scooters/VoyagerProton.jpg';
-import XiaomiMi365 from './images/scooters/XiaomiMi365.jpg';
-import XPRIT65 from './images/scooters/XPRIT65.jpg';
-import ZoomStryderEx from './images/scooters/ZoomStryderEx.jpg';
+import {
+AirCarbon,
+AirAluminum,
+Dualtron3,
+DualtronSpider,
+DualtronThunder,
+EcoRecoL5,
+EcoRecoL5Plus,
+EcoRecoM5,
+EcoRecoS5,
+EmoveTouring,
+GlionDolly,
+GoPedESR750,
+GotraxG1GliderFolding,
+GotraxG2ElectricKick,
+GoTraxGXLCommuter,
+GotraxGXLCommuterV2,
+ImaxS1Plus,
+MegawheelsS1,
+NinebotES1,
+QiewaQ1Hummer,
+QiewaQMini,
+RazorE300,
+RazorEcoSmartMetro,
+RazorEPrime,
+SegwayNinebotES2,
+SegwayNinebotES4,
+SpeedwayMini4Pro,
+SwagtronSwagger,
+SwagtronSwagger5CityCommuter,
+UberScoot300W,
+UberScoot1000W,
+UberScoot1600W,
+UscootersBoosterPlusS,
+UscootersEco,
+VoyagerIon,
+VoyagerProton,
+XiaomiMi365,
+XPRIT65,
+ZoomStryderEx,
+} from './images/scooters/googleCloudStorage'
 
 export const scooters =
 [
