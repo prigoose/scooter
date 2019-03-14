@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Slider from '../base-ui/Slider'
-import { Grid } from 'semantic-ui-react'
+import { Button, Grid } from 'semantic-ui-react'
 import { FilterContainer } from './styledComponents'
 
 class Filters extends Component {
   render() {
-      const { handleWeightFilter, handlePriceFilter, handleRangeFilter, handleSpeedFilter } = this.props;
+      const { openCloseFilters, handleWeightFilter, handlePriceFilter, handleRangeFilter, handleSpeedFilter } = this.props;
     return (
     <FilterContainer>
     <Grid stackable columns={2} celled>
@@ -20,7 +20,7 @@ class Filters extends Component {
         </Grid.Column>
         <Grid.Column>
         <Slider
-            header={'Weight'}
+            header={'Scooter Weight'}
             sliderMax={120}
             suffix={'lbs.'}
             handleFilter={handleWeightFilter}
@@ -46,6 +46,14 @@ class Filters extends Component {
         </Grid.Column>
     </Grid.Row>
         </Grid>
+        <Button
+        basic
+        color='blue'
+          content='Apply'
+          onClick={openCloseFilters}
+          style={{marginTop: 20, color: 'black'}}
+          size='big'
+        />
         </FilterContainer>
     );
   }

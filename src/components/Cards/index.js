@@ -16,7 +16,7 @@ const Cards = ({ scooters }) => {
     );
     return (
         <CardsContainer>
-        <Grid stackable columns={4} style={{display: 'flex', justifyContent: 'space-between'}}>
+        <Grid stackable columns={4} style={{display: 'flex', justifyContent: 'space-around'}}>
         {cards}
         </Grid>
         </CardsContainer>

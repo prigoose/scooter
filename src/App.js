@@ -27,11 +27,16 @@ class App extends Component {
       maxPower: 1500,
       filteredScooters: scooters
     }
+    this.openCloseFilters = this.openCloseFilters.bind(this);
     this.handlePriceFilter = this.handlePriceFilter.bind(this);
     this.handleSpeedFilter = this.handleSpeedFilter.bind(this);
     this.handleRangeFilter = this.handleRangeFilter.bind(this);   this.handleWeightFilter = this.handleWeightFilter.bind(this);
     this.handlePowerFilter = this.handlePowerFilter.bind(this);
     this.handleTypeFilter = this.handleTypeFilter.bind(this);
+  }
+  async openCloseFilters() {
+    const { displayFilters } = this.state;
+    this.setState({displayFilters: !displayFilters})
   }
   handleFilter(min, max) {
     const { minPrice, maxPrice, minSpeed, maxSpeed, minRange, maxRange, minWeight, maxWeight, minPower, maxPower} = this.state;
@@ -78,13 +83,14 @@ class App extends Component {
           content='Add Filters'
           toggle
           active={displayFilters}
-          onClick={() => this.setState({displayFilters: !displayFilters})}
+          onClick={this.openCloseFilters}
           style={{marginTop: 20, color: 'black'}}
           size='big'
         />
         <ConditionalRender 
           shouldRender={displayFilters}
           component={Filters}
+          openCloseFilters={this.openCloseFilters}
           handlePriceFilter={this.handlePriceFilter}
           handleSpeedFilter={this.handleSpeedFilter}
           handleRangeFilter={this.handleRangeFilter}
