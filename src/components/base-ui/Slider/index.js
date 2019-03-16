@@ -22,6 +22,7 @@ export default class SliderFilter extends Component {
             </div>
             <div style={{marginLeft: 5, marginRight: 5, marginTop: 10}}>
             <Range
+                trackStyle={[{ backgroundColor: '#fcd300' }]}
                 max={sliderMax}
                 defaultValue={[0, sliderMax]}
                 onChange={([userMin, userMax]) => {

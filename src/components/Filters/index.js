@@ -48,7 +48,7 @@ class Filters extends Component {
         <Button
         basic
         size='large'
-        color='blue'
+        color='green'
           content='Apply'
           onClick={openCloseFilters}
         />
