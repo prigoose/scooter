@@ -8,7 +8,7 @@ class Filters extends Component {
       const { openCloseFilters, handleWeightFilter, handlePriceFilter, handleRangeFilter, handleSpeedFilter } = this.props;
     return (
     <FilterContainer>
-    <Grid stackable columns={2} celled>
+    <Grid stackable columns={4}>
     <Grid.Row>
         <Grid.Column>
         <Slider
@@ -26,8 +26,6 @@ class Filters extends Component {
             handleFilter={handleWeightFilter}
             />
         </Grid.Column>
-    </Grid.Row>
-    <Grid.Row>
         <Grid.Column>
         <Slider
                 header={'Speed'}
@@ -46,14 +44,15 @@ class Filters extends Component {
         </Grid.Column>
     </Grid.Row>
         </Grid>
+        <div style={{display: 'flex', justifyContent: 'center', paddingTop: 15}}>
         <Button
         basic
+        size='large'
         color='blue'
           content='Apply'
           onClick={openCloseFilters}
-          style={{marginTop: 20, color: 'black'}}
-          size='big'
         />
+        </div>
         </FilterContainer>
     );
   }

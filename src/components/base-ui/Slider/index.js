@@ -17,8 +17,10 @@ export default class SliderFilter extends Component {
         const { userMin, userMax } = this.state;
         return (
             <div>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Heading>{header}</Heading>
-            <div style={{marginLeft: 5, marginRight: 5}}>
+            </div>
+            <div style={{marginLeft: 5, marginRight: 5, marginTop: 10}}>
             <Range
                 max={sliderMax}
                 defaultValue={[0, sliderMax]}

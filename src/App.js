@@ -10,7 +10,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      displayFilters: false,
+      displayFilters: true,
       filtersAdded: false,
       Scooter: true,
       Skateboard: true,
@@ -38,7 +38,7 @@ class App extends Component {
     const { displayFilters } = this.state;
     this.setState({displayFilters: !displayFilters})
   }
-  handleFilter(min, max) {
+  handleFilter() {
     const { minPrice, maxPrice, minSpeed, maxSpeed, minRange, maxRange, minWeight, maxWeight, minPower, maxPower} = this.state;
     const filteredScooters = scooters.filter(scooter => 
     (scooter.price > minPrice && scooter.price < maxPrice &&

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const FilterContainer = styled.div`
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
