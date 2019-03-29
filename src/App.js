@@ -63,7 +63,6 @@ class App extends Component {
       ...this.state.filters,
       ...filterChanges,
     };
-    console.log('handleFilters', newFilters)
     const filteredScooters = this.filterScooters(newFilters)
     this.setState({ filteredScooters, 
       newFilters,
@@ -71,11 +70,7 @@ class App extends Component {
   }
 
   handlePriceFilter(minPrice, maxPrice) {
-    const filterChanges = {
-      minPrice,
-      maxPrice,
-    }
-    this.handleFilter(filterChanges);
+    this.handleFilter({ minPrice, maxPrice, });
   }
 
   handleSpeedFilter(minSpeed, maxSpeed) {
