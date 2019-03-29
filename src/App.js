@@ -70,7 +70,7 @@ class App extends Component {
   }
 
   handlePriceFilter(minPrice, maxPrice) {
-    this.handleFilter({ minPrice, maxPrice, });
+    this.handleFilter({ minPrice, maxPrice });
   }
 
   handleSpeedFilter(minSpeed, maxSpeed) {
