@@ -14,7 +14,6 @@ class App extends Component {
     this.state = {
       filters: {
         displayFilters: true,
-        filtersAdded: false,
         Scooter: true,
         Skateboard: true,
         Alternative: true,
